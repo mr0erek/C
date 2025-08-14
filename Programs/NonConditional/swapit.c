@@ -50,7 +50,7 @@ int main(int argc, char *argv[]){
      
      // by using ^ (XOR) operator 
      /*
-      * XOR OPRATOR WORKING CONCEPT
+      * XOR OPERATOR WORKING CONCEPT
       * XOR denoted as ^ 
       * We know 8bits ≈ 1bytes, therefore 
       * 00000001 = 1 
