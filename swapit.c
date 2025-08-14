@@ -3,7 +3,8 @@
  * Tool core        : Swap 2 numbers with 2 methods
  * Command          : gcc swap_numeric_value.c; ./a.out
  * Description      : This program swaps two numbers using arithmetic operators and XOR (^) operator.
- * */
+ * Reference URL    : https://www.geeksforgeeks.org/dsa/swap-two-numbers-without-using-temporary-variable/
+ */
 #include <stdio.h>
 #include <stdlib.h>
 int main(int argc, char *argv[]){
