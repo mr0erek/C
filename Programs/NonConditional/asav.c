@@ -18,7 +18,7 @@ int main (){
     printf("Enter the radius : ");
     scanf("%lf", &radius);
     area = (PI * pow(radius,2)); //area of circle 2D
-    surface_area = (4 * area); //area of hemisphere or 3D circle
+    surface_area = (4 * area); //area of sphere or 3D circle
     volume = ((4.0/3.0)*PI*(pow(radius,3)));
     printf("\nArea : %.2lf", area);
     printf("\nSurface Area: %.2lf", surface_area);
