@@ -115,7 +115,7 @@ void ALL_ABOUT_FLOAT(){
 	long double lng_dbl_var_min = LDBL_MIN;
 	long double lng_dbl_var_max = LDBL_MAX;
 	printf("\n\n3. long Double floating-point;:\n\tsize: %d\n\tranging values: %Le to %Le", sizeof(lng_dbl_var_max), lng_dbl_var_min, lng_dbl_var_max);
-
+	return;
 }
 void ALL_ABOUT_INT(){
 	printf("\n\n---All About INT---\n\nSize of int datatype modifiers(short, long, long long):\n1. short int: %d\n2. Normal int: %d\n3. long int: %d\n4. long long int: %d",sizeof(short int), sizeof(int), sizeof(long int), sizeof(long long int));
@@ -151,16 +151,139 @@ void ALL_ABOUT_INT(){
 	unsigned long long int ullng_var_min = 0;
 	unsigned long long int ullng_var_max = ULLONG_MAX;
 	printf("\n\n7. long long signed int:\n\tsize: %d\n\tranging values: %lld to %lld\n\n8. long long unsigned int:\n\tsize:%d\n\tranging values: %llu to %llu\n", sizeof(llng_var_max), llng_var_min, llng_var_max, sizeof(ullng_var_max), ullng_var_min, ullng_var_max);
-
+	return;
 }
 
 // char type on the way...
-int main(){
+void ALL_ABOUT_CHAR(){
+
+	printf("\n\n---All About CHAR---\n\nSize & Range value of char datatype with/without (unsigned/signed) magnitude(value):");
+	/*
+	 cal: 
+	    4byte / 2byte = 2byte 
+	    2byte of size will be allocated to the datatype of char
+	 */
+	printf("\n\nSize of a char datatype : %d", sizeof(char));
+	char char_var_size = CHAR_BIT;
+	char var_min = CHAR_MIN; 
+	char var_max = CHAR_MAX;
+	printf("\n\n1. char:\n\tsize:%d\n\tranging values: %d to %d",char_var_size, var_min, var_max);
+	
+	
+	signed char svar_char = CHAR_BIT;
+	signed char svar_min = SCHAR_MIN; 
+	signed char svar_max = SCHAR_MAX;
+	printf("\n\n2. signed char:\n\tsize:%d\n\tranging values: %d to %d",svar_char, svar_min, svar_max);
+
+
+	unsigned char uvar_char = CHAR_BIT;
+	unsigned char uvar_min = 0; 
+	unsigned char uvar_max = UCHAR_MAX;
+	printf("\n\n3. unsigned char:\n\tsize:%d\n\tranging values: %d to %d",uvar_char, uvar_min, uvar_max);
+
+	return;
+}
+char main(){
     ALL_ABOUT_INT();
     printf("\n");
     ALL_ABOUT_FLOAT();
+    printf("\n");
+    ALL_ABOUT_CHAR();
 	return 0;
 }
 
 
 /* There Maybe Something more than I've provided here!!, if you know then feel free to share & contribute.*/
+
+
+
+/* OUTPUT
+
+---All About INT---
+
+Size of int datatype modifiers(short, long, long long):
+1. short int: 2
+2. Normal int: 4
+3. long int: 4
+4. long long int: 8
+
+Size & Range value of int datatype with/without (unsigned/signed) magnitude(value):
+
+1. signed short int:
+        size:2
+        ranging values: -32768 to 32767
+
+2. unsigned short int:
+        size: 2
+        ranging values: 0 to 65535
+
+3. Normal signed int:
+        size: 4
+        ranging values:-2147483648 to 2147483647
+
+4. Normal unsigned int:
+        size:4
+        ranging values: 0 to 4294967295
+
+
+5. long signed int:
+        size: 4
+        ranging values: -2147483648 to 2147483647
+
+6. long unsigned int:
+        size:4
+        ranging values: 0 to 4294967295
+
+
+7. long long signed int:
+        size: 8
+        ranging values: -9223372036854775808 to 9223372036854775807
+
+8. long long unsigned int:
+        size:8
+        ranging values: 0 to 18446744073709551615
+
+
+
+---All About Floating floating-points ---
+
+Size of floating-point datatypes (float, double, long double):
+1. float: 4
+2. double: 8
+3. long double: 16
+
+Size & Range value of float datatype:
+
+1. floating-point:
+        size: 4
+        ranging values: -3.40282e+038 to 3.40282e+038
+
+2. Double floating-point;:
+        size: 8
+        ranging values: 2.22507e-308 to 1.79769e+308
+
+3. long Double floating-point;:
+        size: 16
+        ranging values: 3.205229e-317 to 3.205221e-317
+
+
+---All About CHAR---
+
+Size & Range value of char datatype with/without (unsigned/signed) magnitude(value):
+
+Size of a char datatype : 1
+
+1. char:
+        size:8
+        ranging values: -128 to 127
+
+2. signed char:
+        size:8
+        ranging values: -128 to 127
+
+3. unsigned char:
+        size:8
+        ranging values: 0 to 255
+
+
+*/
