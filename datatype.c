@@ -125,6 +125,8 @@ void ALL_ABOUT_INT(){
 	    4byte / 2byte = 2byte 
 	    2byte of size will be allocated to the datatype of INT
 	 */
+
+	// we can also directly use short, long, unsigned, signed size and sign modifiers without defining the datatype int, as it will implicity done by compiler itself.
 	short int shrt_var_min = SHRT_MIN; 
 	short int shrt_var_max = SHRT_MAX;
 	printf("\n\n1. signed short int:\n\tsize:%d\n\tranging values: %d to %d",sizeof(shrt_var_max), shrt_var_min, shrt_var_max);
